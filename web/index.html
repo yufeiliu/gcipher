@@ -33,8 +33,8 @@
 
 <h2>Usage</h2>
 
-<p><a href='javascript:(function(){function e(){var c=prompt("What is the password?"),c=new Blowfish(c),a=document.querySelector("#canvas_frame").contentWindow.document,b=a.querySelectorAll("iframe")[1];if("undefined"===typeof b){a=a.querySelectorAll("div.ii");for(b=0;b<a.length;b++){var d=a[b].children[0];"undefined"!==typeof d&&"{Encrypted with gcipher}"===d.innerHTML.substr(0,24)&&(d.innerHTML=c.decrypt(d.innerHTML.substr(24).replace(/<wbr>/g,"").replace(/\n/g,"")))}}else a=b.contentWindow.document.querySelector("body.editable"),
-a.innerHTML="{Encrypted with gcipher}"+c.encrypt(a.innerHTML)}null===document.getElementById("blowfish-js")?(s=document.createElement("script"),s.setAttribute("src","https://raw.github.com/yufeiliu/blowfish.js/master/blowfish.js"),s.setAttribute("id","blowfish-js"),s.onload=e,document.body.appendChild(s)):e()})();'>Button</a></p>
+<p><a class="prominent" href='(function(){if(/^https:\/\/mail\.google\.com/.test(document.location.href)){var e=function(){var c=prompt("What is the password?"),c=new Blowfish(c),a=document.querySelector("#canvas_frame").contentWindow.document,b=a.querySelectorAll("iframe")[1];if("undefined"===typeof b){a=a.querySelectorAll("div.ii");for(b=0;b<a.length;b++){var d=a[b].children[0];"undefined"!==typeof d&&"{Encrypted with gcipher}"===d.innerHTML.substr(0,24)&&(d.innerHTML=c.decrypt(d.innerHTML.substr(24).replace(/<wbr>/g,"").replace(/\n/g,
+"")))}}else a=b.contentWindow.document.querySelector("body.editable"),a.innerHTML="{Encrypted with gcipher}"+c.encrypt(a.innerHTML)};null===document.getElementById("blowfish-js")?(s=document.createElement("script"),s.setAttribute("src","https://raw.github.com/yufeiliu/blowfish.js/master/blowfish.js"),s.setAttribute("id","blowfish-js"),s.onload=e,document.body.appendChild(s)):e()}else alert("gcipher only works on the Gmail web interface!")})();'>gcipher!</a></p>
 
 <p>To use it, drag the button to your bookmarks. After writing an email in the Gmail web interface, click the bookmarked button to encrypt your email before sending. gcipher will ask you for a password.</p>
 
