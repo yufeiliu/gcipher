@@ -11,7 +11,8 @@
 			var pw = prompt("What is the password?");
 			var c = new Blowfish(pw);
 			var doc = document.querySelector("#canvas_frame").contentWindow.document;
-			var msgFrame = doc.querySelectorAll("iframe")[1];
+			var allFrames = doc.querySelectorAll("iframe");
+			var msgFrame = allFrames[allFrames.length-1];
 			if (typeof(msgFrame)==="undefined") {
 				var msgContainers = doc.querySelectorAll("div.ii");
 				for (var i = 0; i < msgContainers.length; i++) {
