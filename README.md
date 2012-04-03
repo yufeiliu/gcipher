@@ -1,4 +1,4 @@
-* gcipher
+# gcipher
 gcipher is a Javascript widget to encrypt/decrypt emails in Gmail using 
 the symmetric Blowfish cipher. The cipher itself is implemented by 
 [Daniel Rench](https://github.com/drench).
@@ -14,7 +14,7 @@ gcipher currently only works for the Gmail web interface. This is more
 of an experimental hack for me so I do not plan to expand it to other 
 clients.
 
-** Is it really secure?
+## Is it really secure?
 You use gcipher because you want your email to be _stored_ securely on 
 Google's servers. Gmail already uses secure connection so it already 
 prevents eavesdropping. 
