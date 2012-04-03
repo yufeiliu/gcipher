@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Gcipher by yufeiliu</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Gcipher</h1>
+        <p>Blowfish cipher for Gmail. Encrypt/decrypt your emails for extra layer of security.</p>
+        <p class="view"><a href="https://github.com/yufeiliu/gcipher">View the Project on GitHub <small>yufeiliu/gcipher</small></a></p>
+        <ul>
+          <li><a href="https://github.com/yufeiliu/gcipher/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/yufeiliu/gcipher/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/yufeiliu/gcipher">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>gcipher</h1>
+
+<p>gcipher is a Javascript widget to encrypt/decrypt emails in Gmail using the symmetric Blowfish cipher. The cipher itself is implemented by <a href="https://github.com/drench">Daniel Rench</a>. gcipher currently only works for the <em>Gmail web interface</em>. This is more of an experimental hack for me so I do not plan to expand it to other clients.</p>
+
+<h2>Usage</h2>
+
+<p><a>Button</a></p>
+
+<p>To use it, drag the button to your bookmarks. After writing an email in the Gmail web interface, click the bookmarked button to encrypt your email before sending. gcipher will ask you for a password.</p>
+
+<p>To decrypt, simply open up an email from Gmail, and click the bookmarked button again, which will prompt you for the password for decryption.</p>
+
+<h2>Is it really secure?</h2>
+
+<p>You use gcipher because you want your email to be <em>stored</em> securely on Google's servers. Gmail already uses secure connection so it already prevents eavesdropping. </p>
+
+<p>There are a couple shortcomings to gcipher's approach. For instance, Gmail automatically saves your email to draft before you send it, and possibly before you encrypted it. I hope to address this in a future update.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/yufeiliu">yufeiliu</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
