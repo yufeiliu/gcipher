@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
   <head>
@@ -33,7 +32,7 @@
 
 <h2>Usage</h2>
 
-<p><a class="prominent" href='javascript:(function(){if(/^https:\/\/mail\.google\.com/.test(document.location.href)){var e=function(){var d=prompt("What is the password?"),d=new Blowfish(d),b=document.querySelector("#canvas_frame").contentWindow.document,c=b.querySelectorAll("iframe"),a=c[c.length-1];if(0===c.length||"undefined"===typeof a||"undefined"===typeof a.contentWindow.document||null===a.contentWindow.document.querySelector("body.editable")){b=b.querySelectorAll("div.ii");for(c=0;c<b.length;c++)a=b[c].children[0],"undefined"!==typeof a&&
+<p><a class="prominent" href='javascript:(function(){if(/^https:\/\/mail\.google\.com\//.test(document.location.href)){var e=function(){var d=prompt("What is the password?"),d=new Blowfish(d),b=document.querySelector("#canvas_frame").contentWindow.document,c=b.querySelectorAll("iframe"),a=c[c.length-1];if(0===c.length||"undefined"===typeof a||"undefined"===typeof a.contentWindow.document||null===a.contentWindow.document.querySelector("body.editable")){b=b.querySelectorAll("div.ii");for(c=0;c<b.length;c++)a=b[c].children[0],"undefined"!==typeof a&&
 "{Encrypted with gcipher}"===a.innerHTML.substr(0,24)&&(a.innerHTML=d.decrypt(a.innerHTML.substr(24).replace(/<wbr>/g,"").replace(/\n/g,"")))}else b=a.contentWindow.document.querySelector("body.editable"),b.innerHTML="{Encrypted with gcipher}"+d.encrypt(b.innerHTML)};null===document.getElementById("blowfish-js")?(s=document.createElement("script"),s.setAttribute("src","https://raw.github.com/yufeiliu/blowfish.js/master/blowfish.js"),s.setAttribute("id","blowfish-js"),s.onload=e,document.body.appendChild(s)):
 e()}else alert("gcipher only works on the Gmail web interface!")})();'>gcipher!</a></p>
 
