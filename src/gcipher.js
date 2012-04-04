@@ -5,7 +5,7 @@
 */
 
 (function(){
-	if (/^https:\/\/mail\.google\.com/.test(document.location.href)) {
+	if (/^https:\/\/mail\.google\.com\//.test(document.location.href)) {
 		function gcipher() {
 			var sig = "{Encrypted with gcipher}";
 			var pw = prompt("What is the password?");
