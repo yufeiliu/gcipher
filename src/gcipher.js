@@ -13,7 +13,10 @@
 			var doc = document.querySelector("#canvas_frame").contentWindow.document;
 			var allFrames = doc.querySelectorAll("iframe");
 			var msgFrame = allFrames[allFrames.length-1];
-			if (typeof(msgFrame)==="undefined") {
+
+			var decryptMode = (allFrames.length===0 || typeof(msgFrame)==="undefined" || typeof(msgFrame.contentWindow.document) === "undefined" || msgFrame.contentWindow.document.querySelector("body.editable")===null);
+
+			if (decryptMode) {
 				var msgContainers = doc.querySelectorAll("div.ii");
 				for (var i = 0; i < msgContainers.length; i++) {
 					var cur = msgContainers[i].children[0];
