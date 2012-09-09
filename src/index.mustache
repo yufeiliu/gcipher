@@ -32,7 +32,7 @@
 
 <h2>Usage</h2>
 
-<p><a class="prominent" href='javascript:(function(){if(/^https:\/\/mail\.google\.com\//.test(document.location.href)){var e=function(){var d=prompt("What is the password?"),d=new Blowfish(d),c=document.querySelector("#canvas_frame").contentWindow.document,a=c.querySelector("iframe.editable"),b=a?a.contentWindow.document.querySelector("body.editable"):null;if(!a||"undefined"===typeof a.contentWindow.document||null===b){c=c.querySelectorAll("div.ii");for(a=0;a<c.length;a++)b=c[a].children[0],"undefined"!==typeof b&&"{Encrypted with gcipher}"=== b.innerHTML.substr(0,24)&&(b.innerHTML=d.decrypt(b.innerHTML.substr(24).replace(/<wbr>/g,"").replace(/\n/g,"")))}else b.innerHTML="{Encrypted with gcipher}"+d.encrypt(b.innerHTML)};null===document.getElementById("blowfish-js")?(s=document.createElement("script"),s.setAttribute("src","https://raw.github.com/yufeiliu/blowfish.js/master/blowfish.js"),s.setAttribute("id","blowfish-js"),s.onload=e,document.body.appendChild(s)):e()}else alert("gcipher only works on the Gmail web interface!")})();'>gcipher!</a></p>
+<p><a class="prominent" href='{{{gcipher_code}}}'>gcipher!</a></p>
 
 <p>To use it, drag the button to your bookmarks. After writing an email in the Gmail web interface, click the bookmarked button to encrypt your email before sending. gcipher will ask you for a password.</p>
 
